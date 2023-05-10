@@ -1,0 +1,94 @@
+#home {
+    &__a {
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__b {
+        .profile {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                &.title {
+                    font-size: 1.5rem;
+                }
+
+                &.number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                padding: 3rem 0;
+
+                &:nth-child(odd) {
+                    background-color: $light-color;
+                }
+
+                &:nth-child(even) {
+                    background-color: $medium-color;
+                }
+            }
+        }
+    }
+
+    &__c {
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+
+            &-icon {
+                position: relative;
+                background-color: $light-color;
+                border-radius: 50%;
+                padding: 3rem;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: $light-color;
+
+                    .process-step {
+                        background-color: $light-color;
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            &-step {
+                font-size: 2rem;
+                color: white;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: $primary-color;
+                padding: .5rem 1rem;
+                border-radius: 100%;
+
+                &:hover {
+                    background-color: $light-color;
+                    color: $primary-color;
+
+                    .process-icon {
+                        color: $light-color;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+
+            h3 {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

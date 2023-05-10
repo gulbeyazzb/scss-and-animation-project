@@ -1,0 +1,88 @@
+#about {
+    &__a {
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+
+
+            &__image {
+                padding: .5rem;
+                width: 100%;
+                border: 2px solid $light-color;
+                border-radius: 3px;
+            }
+
+            &__bio {
+                border: 2px solid $light-color;
+                border-radius: 3px;
+                padding: .8rem;
+            }
+
+        }
+    }
+
+    &__b {
+        background-color: $dark-color;
+        color: white;
+
+
+        .progress {
+            height: 20px;
+            border-radius: 30px;
+            margin-bottom: .8rem;
+            background-color: $medium-color;
+
+            div {
+                height: 100%;
+                border-radius: 30px;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    &__c {
+        .about-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            align-items: center;
+
+            img {
+                padding: .5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    &__d {
+        .references {
+            p {
+                padding: 2rem;
+                border: 2px solid $light-color;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                margin-top: 1rem;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    width: 40px;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+
+    &__e {
+        .users {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+        }
+    }
+}

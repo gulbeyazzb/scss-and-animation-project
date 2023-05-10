@@ -1,0 +1,68 @@
+   .main-nav {
+
+       display: grid;
+       grid-template-columns: 1.5fr 2fr;
+
+       &__logo {
+           width: 70px;
+       }
+
+       &__items {
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           align-items: center;
+
+           a {
+               color: #333;
+               font-size: 1.4rem;
+
+
+               &:hover {
+                   border-bottom: 2px solid $medium-color;
+               }
+
+               &.active {
+                   border-bottom: 4px solid $primary-color;
+               }
+           }
+       }
+   }
+
+   #header {
+       &__home {
+           //anasayfanın headerı için genel tanımlamalar yapılacak bölüm  
+           background: $bg-image no-repeat center right/cover;
+           background-attachment: fixed;
+           height: 100vh;
+           color: black;
+
+           .header-content {
+               //header-home altındaki eleman olan header-contente erişim sağlanarak buton ve tanım cümlesi için özellik tanımlandı
+               text-align: center;
+               padding-top: 30%;
+           }
+
+           h1 {
+               //başlığa özel kod
+               font-size: 2rem;
+               line-height: 1.2;
+           }
+
+           .typewrite {
+               //buton ve üzerindeki yazıyı alt alta getirmek için block tanımlandı.
+               display: block;
+           }
+
+
+       }
+
+       &__inner,
+       &__projects,
+       &__contact {
+           background: $bg-image no-repeat 40% 60% / cover;
+           background-attachment: fixed;
+           height: 2%;
+           border-bottom: 3px solid $primary-color;
+       }
+
+   }
